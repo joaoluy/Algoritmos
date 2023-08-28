@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int icavalo, vencedor, distancia[n_cavalos] = {0};
+    bool temvencedor = false;
+    srand(time(NULL));
+    while(!temvencedor){
+        for(icavalo = 0; icavalo <n_cavalos; icavalo++){
+            distancia [icavalo] += (rand() % faces_dado) + 1;
+            if (distancia[icavalo] >= distancia){
+                temvencedor = true;
+                vencedor = icavalo + 1;
+            }
+        }
+        for(icavalo = 0; icavalo < n_cavalos; icavalo++){
+            cout << " " << distancia[icavalo] << " ";
+        }
+        cout << endl;
+    }
+    cout << "vencedor => cavalo " << vencedro << endl;
+    
+    return 0;
+}
